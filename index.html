@@ -1,0 +1,60 @@
+diff --git a/src/main/resources/static/index.html b/src/main/resources/static/index.html
+new file mode 100644
+index 0000000000000000000000000000000000000000..31df3ee40ceec3e42842b2fb2891ce32718de88e
+--- /dev/null
++++ b/src/main/resources/static/index.html
+@@ -0,0 +1,54 @@
++<!DOCTYPE html>
++<html lang="pt-BR">
++<head>
++    <meta charset="UTF-8" />
++    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
++    <title>Portfolio Profissional</title>
++    <link rel="preconnect" href="https://fonts.googleapis.com">
++    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
++    <link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:wght@400;700&display=swap" rel="stylesheet">
++    <link rel="stylesheet" href="styles.css" />
++</head>
++<body>
++<header class="hero">
++    <div class="hero-overlay"></div>
++    <div class="hero-content">
++        <p class="badge">PORTFOLIO PROFISSIONAL</p>
++        <h1>Construindo soluções modernas com Java e frontend de alto padrão</h1>
++        <p class="subtitle">Tema neutro com detalhes em preto, prata e cinza, inspirado em estética profissional de sistemas corporativos.</p>
++        <div class="hero-actions">
++            <button class="action-btn" data-filter="all">Ver tudo</button>
++            <button class="action-btn secondary" data-filter="Meus Códigos">Meus Códigos</button>
++        </div>
++    </div>
++</header>
++
++<main>
++    <section class="controls">
++        <h2>Seções do Portfolio</h2>
++        <div class="filters" id="filters"></div>
++    </section>
++
++    <section id="grid" class="grid" aria-live="polite"></section>
++</main>
++
++<template id="card-template">
++    <article class="card">
++        <div class="card-header">
++            <span class="category"></span>
++            <span class="status"></span>
++        </div>
++        <h3 class="title"></h3>
++        <p class="description"></p>
++        <p class="stack"></p>
++        <a class="link" href="#" target="_blank" rel="noopener noreferrer">Detalhes</a>
++    </article>
++</template>
++
++<footer>
++    <p>© <span id="year"></span> Meu Portfolio — Backend Java (Spring Boot) + Frontend interativo.</p>
++</footer>
++
++<script src="app.js"></script>
++</body>
++</html>
